@@ -10,27 +10,34 @@
 </head>
 <body>
   <header>
-      <a class="logo" href="#travel"><span>T</span>ravel</a>
-      <nav>
-        <a href="#home">ホーム</a>
-        <a href="#packege">パッケージ</a>
-        <a href="#service">サービス</a>
-        <a href="#contact">お問い合わせ</a>
-      </nav>
+    <a class="logo" href="#travel"><span>T</span>ravel</a>
+    <div class="icons">
       <div class="login">
-        <i class="fas fa-user"></i>
+        <i class="fas fa-user" id="login-btn"></i>
       </div>
+      <div class="menu-icon">
+        <i class="fas fa-bars" id="menu"></i>
+      </div>
+    </div>
+    <nav>
+      <a href="#packege">パッケージ</a>
+      <a href="#service">サービス</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
   </header>
   <div class="form-login-container">
+    <i class="fas fa-times" id="formauto"></i>
     <form id="login-form">
       <h1>ログイン</h1>
       <h3>電話番号またはメールアドレス</h3>
       <input type="email" placeholder="例：08012345678 / travel@travel.com" class="box">
       <h3>パスワード</h3>
       <input type="password" class="box">
-      <input type="checkbox" id="checkbox">
-      <label for="checkbox">次回から自動でログインする</label>
-      <input type="submit" value="ログインする" class="login-btn">
+      <div class="checkbox-1">
+        <input type="checkbox" class="checkbox">
+        <label for="checkbox">次回から自動でログインする</label>
+      </div>
+        <input type="submit" value="ログインする" class="login-btn">
       <div class="a-tag">
         <a href="#">パスワードを忘れた方はこちらから</a><br>
         <a href="#">新規登録</a>
