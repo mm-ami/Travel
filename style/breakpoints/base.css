@@ -82,7 +82,7 @@ nav {
   border-radius: var(--border-radius);
   transform: scale(0);
   transform-origin: top right;
-  width: 14%;
+  width: 11%;
 }
 
 nav.active {
@@ -94,8 +94,8 @@ nav.active {
 nav a {
   display: block;
   color: var(--text1);
-  padding: 1rem;
-  margin: 1rem;
+  padding: 10px;
+  margin: 10px;
   font-size: 13px;
 }
 
@@ -103,7 +103,7 @@ nav a:hover {
   background-color: var(--bg-color-2);
   border-radius: var(--border-radius);
   color: var(--main);
-  padding-left: 1.2rem;
+  padding-left: 13px;
 }
 
 /* ---------------------------- ログイン画面 ----------------- */
