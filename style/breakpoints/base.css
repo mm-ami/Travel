@@ -18,7 +18,8 @@
 }
 
 body {
-  background-color: var(--bg-color-2);
+  background-color: rgba(209, 230, 240, 0.938);
+  width: 100%;
 }
 
 a {
@@ -219,4 +220,89 @@ label, input[type='checkbox'] {
 
 .a-tag a:hover {
   color: var(--main);
+}
+
+/* ---------------------------- ホーム ---------------------- */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.human-image {
+  position: absolute;
+  transform: translate(-40px, 490px);
+}
+
+.human-image img {
+  width: 480px;
+}
+
+.fly-image {
+  position: absolute;
+  transform: translate(400px, -30px) rotate(13deg);
+}
+
+.fly-image img {
+  width: 1000px;
+}
+
+.main h1 {
+  position: absolute;
+  top: 36%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  font-size: 2.6rem;
+}
+
+.main h1 span {
+  color: var(--main);
+}
+
+.search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: var(--box-shadow);
+  width: 100%;
+}
+
+.search-container {
+  display: flex;
+  background-color: var(--bg-color-1);
+  border-radius: var(--border-radius);
+  padding: 1.3rem;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.inputbox {
+  padding-right: 15px;
+}
+
+.search-container input {
+  background-color: var(--bg-color-2);
+  border: none;
+  width: 264px;
+  height: 40px;
+  border-radius: var(--border-radius);
+  padding-left: 14px;
+  margin-top: 7px;
+}
+
+.search-container .search-btn {
+  background-color: var(--main);
+  color: var(--bg-color-1);
+  cursor: pointer;
+}
+
+.search-container .search-btn:hover {
+  opacity: 0.7;
 }
