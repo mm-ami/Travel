@@ -4,85 +4,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
-  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style.css">
   <title>Travel</title>
 </head>
 <body>
-  <header>
-    <a class="logo" href="#travel"><span>T</span>ravel</a>
-    <div class="icons">
-      <div class="login">
-        <i class="fas fa-user" id="login-btn"></i>
+  <div class="header-container">
+    <header>
+      <div class="logo header">Travel</div>
+      <div class="icons">
+        <div class="booknow header">ご予約はこちら</div>
+        <button class="menu-icon header">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-      <div class="menu-icon">
-        <i class="fas fa-bars" id="menu"></i>
-      </div>
-    </div>
-    <nav>
-      <a href="#home">ホーム</a>
-      <a href="#packege">パッケージ</a>
-      <a href="#service">サービス</a>
-      <a href="#contact">お問い合わせ</a>
-    </nav>
-  </header>
-  <div class="form-login-container">
-    <i class="fas fa-times" id="formauto"></i>
-    <form id="login-form">
-      <h1>ログイン</h1>
-      <h3>電話番号またはメールアドレス</h3>
-      <input type="email" placeholder="例：08012345678 / travel@travel.com" class="box">
-      <h3>パスワード</h3>
-      <input type="password" class="box">
-      <div class="checkbox-1">
-        <input type="checkbox" class="checkbox">
-        <label for="checkbox">次回から自動でログインする</label>
-      </div>
-        <input type="submit" value="ログインする" class="login-btn">
-      <div class="a-tag">
-        <a href="#">パスワードを忘れた方はこちらから</a><br>
-        <a href="#">新規登録</a>
-      </div>
-    </form>
+    </header>
   </div>
   <div class="container">
-    <div class="main">
-      <div class="human-image">
-        <img src="images/travel2.svg" alt="">
-      </div>
-      <div class="fly-image">
-        <img src="images/fly.svg" alt="">
-      </div>
-      <h1>海外旅行を<span>パッケージツアー</span>で</h1>
-      <div class="search">
-        <form class="search-container">
-          <div class="inputbox">
-            <p>出発地</p>
-            <input type="text" list="leaving">
-            <datalist id="leaving">
-              <option value="札幌"></option>
-              <option value="仙台"></option>
-              <option value="東京"></option>
-              <option value="大阪"></option>
-              <option value="福岡"></option>
-            </datalist>
-          </div>
-          <div class="inputbox">
-            <p>目的地</p>
-            <input type="text" list="arrivals">
-            <datalist id="arrivals">
-              <option value="ハワイ"></option>
-              <option value="台湾"></option>
-              <option value="パリ"></option>
-            </datalist>
-          </div>
-          <div class="inputbox">
-            <p>日付</p>
-            <input type="date">
-          </div>
-          <input class="search-btn" type="submit" value="検索する">
-        </form>
-      </div>
+    <div class="images">
+      <img class="item1" src="images/suisu.jpg" alt="sea">
+      <img class="item1" src="images/town.jpg" alt="town">
+      <img class="item1" src="images/taiwan.jpg" alt="taiwan">
+      <img class="item1" src="images/hawai.jpg" alt="town">
     </div>
   </div>
   <script src="main.js"></script>
