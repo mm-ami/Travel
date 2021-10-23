@@ -177,12 +177,13 @@ header .logo {
   align-items: flex-start;
   padding: 30px;
   justify-content: space-between;
+  background: #eee;
 }
 
 .title-dlex {
   width: 47%;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 40px 0 0 0;
 }
 
 .overview-title p {
@@ -197,6 +198,7 @@ header .logo {
 
 .hotel-image {
   width: 47%;
+  margin: 0 auto 0 0;
 }
 
 .hotel-image img {
