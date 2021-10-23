@@ -123,51 +123,6 @@ header .logo {
   animation-delay: 15s;
 }
 
-/* ふわっとアニメーション */
-@keyframes anime {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  30% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-    z-index: 9;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes anime {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  30% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-    z-index: 9;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 .overview-container {
   margin-bottom: 7%;
 }
@@ -240,6 +195,7 @@ header .logo {
 
 .packege-menu h4 {
   font-weight: lighter;
+  font-size: 17px;
 }
 
 .packege-menu p {
@@ -259,8 +215,9 @@ header .logo {
   background-color: black;
   color: white;
   padding: 12px 50px;
-  margin-top: 5px;
+  margin-top: 10px;
   cursor: pointer;
+  border-radius: 2px;
 }
 
 /* ------------------------- サービス内容---------  */
@@ -311,5 +268,111 @@ header .logo {
   font-size: 13px;
 }
 
+/* --------------------- お問い合わせ ----------- */
+.contact-container {
+  margin-top: 7%;
+}
 
+.contact-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
 
+.form-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container form input {
+  margin-bottom: 15px;
+  padding: 13px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.contact-container form textarea {
+  margin-bottom: 15px;
+  padding: 13px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+}
+
+.contact-container form button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 12px 70px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+/* --------------------- フッター -------------- */
+footer {
+  height: 110px;
+  background-color: #eee;
+  padding: 40px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6%;
+}
+
+footer h3 {
+  display: block;
+  font-size: 26px;
+  font-weight: lighter;
+}
+
+/* ---------------- @keyframes ------------------ */
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+    z-index: 9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+    z-index: 9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
