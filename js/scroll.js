@@ -11,7 +11,6 @@ class ScrollObserver {
     this.options = Object.assign(Options, options);
     this.once = this.options.once;
     this._init();
-    console.log(this.elements)
   }
   _init() {
     const slideIn = function(entries, observer) {
