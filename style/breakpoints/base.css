@@ -332,7 +332,70 @@ footer h3 {
   font-weight: lighter;
 }
 
+/* ----------------------- カバースライド --------------  */
+.cover-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.cover-slide::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #eee;
+}
+
+.cover-slide.inview::after{
+  animation: cover-slide 1.3s ease;
+  animation-fill-mode: forwards;
+}
+
+.img-zoom {
+  opacity: 0;
+}
+
+.inview.img-zoom {
+  animation: img-zoom 1.5s ease;
+  animation-fill-mode: forwards;
+}
+
 /* ---------------- @keyframes ------------------ */
+@keyframes cover-slide {
+  0% {
+    right: 100%;
+    left: 0;
+  }
+  50% {
+    right: 0;
+    left: 0;
+  }
+  100% {
+    right: 0;
+    left: 100%;
+  }
+}
+
+@keyframes img-zoom {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  50.1% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 @keyframes anime {
   0% {
     opacity: 0;
