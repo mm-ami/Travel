@@ -1,3 +1,39 @@
 @media screen and (max-width: 480px) {
+  .main-title {
+    position: absolute;
+    top: 75%;
+    left: 9%;
+    z-index: 10;
+    color: white;
+    font-size: 15px;
+  }
+
+  .service-menu {
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    margin: 10px;
+  }
+
+  .packege-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
   
+  .service-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .contact-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .form-container {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
