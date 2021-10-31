@@ -1,5 +1,27 @@
 @media screen and (max-width: 1280px) {
-  .logo span {
-    color: red;
+  .overview-title h1 {
+    font-size: 1.8rem;
+  }
+
+  .explanation p {
+    font-size: 12px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem,1fr));
+  }
+
+  .hotel-image {
+    width: 47%;
+    margin: 0;
+  }
+
+  .packege-container {
+    margin-bottom: 15%;
+  }
+
+  .grid {
+    gap: 3% 3%;
   }
 }
