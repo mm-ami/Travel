@@ -4,36 +4,36 @@ class ScrollObserver {
     const Options = {
       root: null,
       threshold: 0,
-      rootMargin: "0px",
+      rootMargin: "0% 0% -10% 0%",
       once: true
     };
     this.slide = slide;
     this.options = Object.assign(Options, options);
     this.once = this.options.once;
     this._init();
-  }
+  };
   _init() {
     const slideIn = function(entries, observer) {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           this.slide(entry.target, true);
           if(this.once) {
-            observer.unobserve(entry.target)
-          }
+            observer.unobserve(entry.target);
+          };
         } else {
-          this.slide(entry.target, false)
-        }
+          this.slide(entry.target, false);
+        };
       });
-    }
+    };
 
     this.animation = new IntersectionObserver(slideIn.bind(this), this.options);
     
     this.animation.POLL_INTERVAL = 100;
     
     this.elements.forEach(element => this.animation.observe(element));
-  }
+  };
 
   destroy() {
     this.animation.disconnect();
-  }
+  };
 };
