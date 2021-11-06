@@ -1,6 +1,15 @@
 @media screen and (max-width: 1280px) {
+  header .logo {
+
+    color: aqua;
+  }
+
   .overview-title h1 {
-    font-size: 1.8rem;
+    font-size: 24px;
+  }
+
+  .overview-title p {
+    font-size: 18px;
   }
 
   .explanation p {
@@ -8,20 +17,11 @@
   }
 
   .grid {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem,1fr));
-  }
-
-  .hotel-image {
-    width: 47%;
-    margin: 0;
+    gap: 4% 2%;
   }
 
   .packege-container {
-    margin-bottom: 15%;
-  }
-
-  .grid {
-    gap: 3% 3%;
+    margin-bottom: 100px;
   }
 }
