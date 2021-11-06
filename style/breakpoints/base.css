@@ -10,19 +10,18 @@ body {
 }
 
 .header-container {
-  margin: 0 auto;
-  width: 80%;
-  height: 20px;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
 }
 
 header {
-  position: fixed;
-  width: 80%;
+  margin: 0 auto;
+  width: 84%;
   display: flex;
-  padding: 20px 0 0 0;
   align-items: center;
   justify-content: space-between;
-  z-index: 100;
+  height: 85px;
 }
 
 header .logo {
@@ -37,13 +36,14 @@ header .logo {
 .container {
   width: 84%;
   margin: 0 auto;
+  padding-top: 85px;
 }
 
-/* -------------------------- ホーム画像 ------------- */
+/* -------------------------- ホーム -------------------------- */
 
 .images {
   overflow: hidden;
-  margin: 5% 0 7% 0;
+  margin: 0 0 85px 0;
   height: 80vh;
   position: relative;
 }
@@ -54,13 +54,12 @@ header .logo {
   left: 9%;
   z-index: 10;
   color: white;
-  font-size: 1.7rem;
+  font-size: 47px;
 }
 
 .images img {
   opacity: 0;
   position: absolute;
-  height: 100vh;
   width: 100%;
   object-fit: cover;
   animation: anime 20s 0s infinite;
@@ -79,7 +78,7 @@ header .logo {
 }
 
 .overview-container {
-  margin-bottom: 7%;
+  margin-bottom: 85px;
 }
 
 .overview {
@@ -90,30 +89,30 @@ header .logo {
   background: #eee;
 }
 
-.title-dlex {
-  width: 47%;
-}
-
-.overview-title p {
-  padding-bottom: 30px;
-  font-size: 1.1rem;
-}
-
-.overview-title h1 {
-  font-size: 2.3rem;
-  padding-bottom: 5px;
-}
-
-.explanation p {
-  font-size: 14px;
-}
-
 .hotel-image {
   width: 47%;
 }
 
 .hotel-image img {
   max-width: 100%;
+}
+
+.overview-text {
+  width: 47%;
+}
+
+.overview-title h1 {
+  font-size: 30px;
+  padding-bottom: 5px;
+}
+
+.overview-title p {
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+
+.explanation p {
+  font-size: 14px;
 }
 
 .overview-btn button {
@@ -135,13 +134,15 @@ header .logo {
   color: black;
 }
 
-/* --------------------- パッケージ ----------------  */
+/* -------------------------- パッケージ -------------------------- */
 .packege-container {
-  margin-bottom: 12%;
+  margin-bottom: 135px;
 }
 
-.packege-container h1 {
-  font-size: 2.5rem;
+.packege-container h1,
+.service-container h1,
+.contact-container h1 {
+  font-size: 40px;
   margin-bottom: 25px;
 }
 
@@ -177,7 +178,6 @@ header .logo {
 .packege-menu button {
   display: block;
   border: 1px solid black;
-  /* border: none; */
   background-color: white;
   color: black;
   padding: 10px 45px;
@@ -212,12 +212,7 @@ header .logo {
   color: white;
 }
 
-/* ------------------------- サービス内容---------  */
-.service-container h1 {
-  font-size: 2.5rem;
-  margin-bottom: 25px;
-}
-
+/* -------------------------- サービス内容 -------------------------- */
 .service-grid {
   display: flex;
   flex-wrap: wrap;
@@ -264,14 +259,9 @@ header .logo {
   font-size: 13px;
 }
 
-/* --------------------- お問い合わせ ----------- */
+/* -------------------------- お問い合わせ -------------------------- */
 .contact-container {
-  margin-top: 7%;
-}
-
-.contact-container h1 {
-  font-size: 2.5rem;
-  margin-bottom: 25px;
+  margin-top: 85px;
 }
 
 .form-container {
@@ -317,7 +307,7 @@ header .logo {
   color: black;
 }
 
-/* --------------------- フッター -------------- */
+/* -------------------------- フッター -------------------------- */
 footer {
   height: 110px;
   background-color: #eee;
@@ -325,7 +315,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 6%;
+  margin-top: 85px;
 }
 
 footer h3 {
@@ -334,7 +324,7 @@ footer h3 {
   font-weight: lighter;
 }
 
-/* ----------------------- アニメーション --------------  */
+/* -------------------------- アニメーション -------------------------- */
 .cover-slide {
   position: relative;
   overflow: hidden;
@@ -362,14 +352,13 @@ footer h3 {
 
 .inview .img-zoom {
   animation: img-zoom 1.5s ease;
-  
   animation-fill-mode: forwards;
 }
 
 .service-menu.fadeIn {
   opacity: 1;
 }
-/* ---------------- @keyframes ------------------ */
+/* -------------------------- @keyframes -------------------------- */
 @keyframes cover-slide {
   0% {
     right: 100%;
