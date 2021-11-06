@@ -1,47 +1,45 @@
 @media screen and (max-width: 960px) {
-  .main-title {
-    position: absolute;
-    top: 68%;
-    left: 9%;
-    z-index: 10;
-    color: white;
-    font-size: 1.3rem;
+  header .logo {
+    color: rebeccapurple;
   }
 
-  header {
-    padding: 10px 0 0 0;
+  .main-title {
+    font-size: 38px;
+  }
+
+  .overview {
+    padding: 18px;
   }
 
   .overview-title h1 {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   .overview-title p {
-    padding-bottom: 30px;
+    padding-bottom: 3px;
+    font-size: 13px;
+  } 
+
+  .explanation p {
     font-size: 10px;
   }
 
-  .explanation p {
-    font-size: 2px;
-  }
-
   .overview-btn button {
-    background-color: black;
-    color: white;
-    border: none;
     padding: 10px 30px;
-    display: block;
     margin-top: 20px;
-    cursor: pointer;
-    box-shadow: 5px 5px 10px 0 rgb(0 0 0 / 50%);
-    transition: all 0.2s ease;
     font-size: 8px;
   }
 
   .grid {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
     gap: 2%;
+  }
+
+  .packege-container h1,
+  .service-container h1,
+  .contact-container h1 {
+    font-size: 29px;
+    margin-bottom: 15px;
   }
 
   .packege-menu p {
@@ -51,42 +49,32 @@
 
   .packege-menu span {
     font-size: 15px;
-    padding-left: 7px;
   }
 
   .packege-menu button {
-    display: block;
-    border: 1px solid black;
-    /* border: none; */
-    background-color: white;
-    color: black;
     padding: 7px 30px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 3px;
-    font-size: 9px;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
+    margin-top: 8px;
+    font-size: 10px;
+  }
+
+  .service-menu span {
+    font-size: 35px;
+  }
+  
+  .service-menu h3 {
+    font-size: 25px;
   }
 
   .service-grid {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
   }
   
   .service-menu {
-    background-color: #eee;
-    border-radius: 10px;
-    padding: 15px;
-    position: relative;
     width: 43%;
     margin: 10px;
   }
 
   .form-container {
-    width: 70%;
-    margin: 0 auto;
+    width: 90%;
   }
 }
