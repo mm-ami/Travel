@@ -4,11 +4,16 @@
     color: aqua;
   }
 
+  .overview {
+    padding: 25px;
+  }
+
   .overview-title h1 {
     font-size: 24px;
   }
 
   .overview-title p {
+    padding-bottom: 10px;
     font-size: 18px;
   }
 
