@@ -191,6 +191,7 @@ header .logo {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  cursor: pointer;
 }
 
 .packege-menu button.slide-bg::before {
