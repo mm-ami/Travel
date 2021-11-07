@@ -8,8 +8,16 @@
   }
 
   header .logo {
-    color: aquamarine;
     font-size: 20px;
+  }
+
+  .main-title {
+    left: 6%;
+    font-size: 23px;
+  }
+
+  .packege-container {
+    margin-bottom: 170px;
   }
 
   .service-menu {
