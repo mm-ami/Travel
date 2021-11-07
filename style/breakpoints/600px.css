@@ -1,6 +1,5 @@
 @media screen and (max-width: 600px) {
   header .logo {
-    color: red;
     font-size: 23px;
   }
 
@@ -16,6 +15,10 @@
   .overview {
     justify-content: center;
     flex-direction: column;
+  }
+
+  .overview-title h1 {
+    font-size: 19px;
   }
 
   .hotel-image {
@@ -39,7 +42,6 @@
   .service-container h1,
   .contact-container h1 {
     font-size: 26px;
-    margin-bottom: 15px;
   }
 
   .packege-menu p,
