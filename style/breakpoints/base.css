@@ -6,7 +6,7 @@
 
 body {
   width: 100%;
-  font-family: "Kameron", "Noto Sans JP", sans-serif;
+  font-family: "sans-serif";
 }
 
 .header-container {
@@ -103,8 +103,9 @@ header .logo {
 }
 
 .overview-title h1 {
-  font-size: 30px;
+  font-size: 33px;
   padding-bottom: 5px;
+  font-weight: lighter;
 }
 
 .overview-title p {
@@ -143,8 +144,9 @@ header .logo {
 .packege-container h1,
 .service-container h1,
 .contact-container h1 {
-  font-size: 40px;
+  font-size: 38px;
   margin-bottom: 25px;
+  font-weight: lighter;
 }
 
 .grid {
@@ -168,12 +170,14 @@ header .logo {
   font-size: 22px;
   padding-top: 5px;
   font-weight: bolder;
+  font-weight: lighter;
 }
 
 .packege-menu span {
   font-size: 22px;
   padding-left: 7px;
   font-weight: bolder;
+  font-weight: lighter;
 }
 
 .packege-menu button {
@@ -183,8 +187,6 @@ header .logo {
   color: black;
   padding: 10px 45px;
   margin-top: 10px;
-  cursor: pointer;
-  border-radius: 3px;
   font-size: 13px;
   position: relative;
   overflow: hidden;
@@ -243,7 +245,7 @@ header .logo {
 }
 
 .service-menu span {
-  font-size: 2.3rem;
+  font-size: 40px;
   font-weight: 600;
   vertical-align: middle;
   position: absolute;
