@@ -1,7 +1,6 @@
 @media screen and (max-width: 1280px) {
-  header .logo {
-
-    color: aqua;
+  .main-title {
+    top: 63%;
   }
 
   .overview {
@@ -14,19 +13,23 @@
 
   .overview-title p {
     padding-bottom: 10px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .explanation p {
     font-size: 12px;
   }
 
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(16rem,1fr));
-    gap: 4% 2%;
+  .overview-btn button {
+    margin-top: 20px;
   }
 
   .packege-container {
     margin-bottom: 100px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(16rem,1fr));
+    gap: 4% 2%;
   }
 }
