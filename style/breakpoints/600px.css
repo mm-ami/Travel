@@ -1,53 +1,60 @@
 @media screen and (max-width: 600px) {
+  header .logo {
+    font-size: 23px;
+  }
+
   .booknow {
     font-size: 13px;
   }
 
-  header {
-    padding: 12px 0 0 0;
+  .main-title {
+    top: 75%;
+    font-size: 29px;
   }
 
   .overview {
-    display: flex;
-    align-items: center;
-    padding: 30px;
     justify-content: center;
-    background: #eee;
     flex-direction: column;
+  }
+
+  .overview-title h1 {
+    font-size: 19px;
   }
 
   .hotel-image {
     width: 100%;
-    margin: 0;
   }
 
-  .title-dlex {
+  .overview-text {
     width: 100%;
     padding-top: 10px;
   }
 
   .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
     gap: 1%;
   }
 
   .packege-container {
-    margin-bottom: 35%;
+    margin-bottom: 200px;
+  }
+
+  .packege-container h1,
+  .service-container h1,
+  .contact-container h1 {
+    font-size: 26px;
+  }
+
+  .packege-menu p,
+  .packege-menu span {
+    font-size: 17px;
   }
 
   .packege-menu button {
-    display: block;
-    border: 1px solid black;
-    background-color: white;
-    color: black;
-    padding: 7px 30px;
+    padding: 9px 60px;
     margin-top: 5px;
-    cursor: pointer;
-    border-radius: 3px;
-    font-size: 9px;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
+  }
+
+  footer h3 {
+    font-size: 23px;
   }
 }

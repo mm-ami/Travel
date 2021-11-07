@@ -1,27 +1,35 @@
 @media screen and (max-width: 1280px) {
+  .main-title {
+    top: 63%;
+  }
+
+  .overview {
+    padding: 25px;
+  }
+
   .overview-title h1 {
-    font-size: 1.8rem;
+    font-size: 24px;
+  }
+
+  .overview-title p {
+    padding-bottom: 10px;
+    font-size: 16px;
   }
 
   .explanation p {
     font-size: 12px;
   }
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem,1fr));
-  }
-
-  .hotel-image {
-    width: 47%;
-    margin: 0;
+  .overview-btn button {
+    margin-top: 20px;
   }
 
   .packege-container {
-    margin-bottom: 15%;
+    margin-bottom: 100px;
   }
 
   .grid {
-    gap: 3% 3%;
+    grid-template-columns: repeat(auto-fit, minmax(16rem,1fr));
+    gap: 4% 2%;
   }
 }
